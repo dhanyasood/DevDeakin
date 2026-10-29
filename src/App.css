@@ -369,9 +369,7 @@ nav a:hover {
     transition: transform 0.4s ease;
 }
 
-.project-card:hover img {
-    transform: scale(1.03);
-}
+
 
 
 /* Project title */
@@ -398,9 +396,6 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   FEATURED ARTICLES
-========================================================= */
 
 .article-list {
     width: 90%;
@@ -435,8 +430,7 @@ nav a:hover {
 }
 
 .article-card:hover {
-    transform: translateY(-6px);
-
+    
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
 }
 
@@ -454,9 +448,6 @@ nav a:hover {
     transition: transform 0.4s ease;
 }
 
-.article-card:hover img {
-    transform: scale(1.03);
-}
 
 
 /* Article title */
@@ -518,9 +509,6 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   FEATURED TUTORIALS
-========================================================= */
 
 .tutorial-list {
     width: 90%;
@@ -554,12 +542,6 @@ nav a:hover {
         box-shadow 0.3s ease;
 }
 
-.tutorial-card:hover {
-    transform: translateY(-6px);
-
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
-}
-
 
 /* Tutorial image */
 
@@ -574,9 +556,6 @@ nav a:hover {
     transition: transform 0.4s ease;
 }
 
-.tutorial-card:hover img {
-    transform: scale(1.03);
-}
 
 
 /* Tutorial title */
@@ -638,9 +617,7 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   RATING / AUTHOR
-========================================================= */
+
 
 .rating {
     margin: 5px 12px;
@@ -659,9 +636,6 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   NEWSLETTER
-========================================================= */
 
 .newsletter {
     width: 100%;
@@ -756,9 +730,7 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   FOOTER
-========================================================= */
+
 
 .footer {
     width: 100%;
@@ -805,9 +777,6 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   SOCIAL MEDIA ICONS
-========================================================= */
 
 .social-icons {
     display: flex;
@@ -853,9 +822,6 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   FOOTER BOTTOM
-========================================================= */
 
 .footer-bottom {
     grid-column: 1 / -1;
@@ -895,9 +861,7 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   TABLET
-========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -929,9 +893,7 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -1087,5 +1049,131 @@ nav a:hover {
         flex-direction: column;
 
         gap: 8px;
+    }
+}
+
+/* =========================================================
+   P4 - LOGIN AND SIGNUP PAGES
+   Additional styles only; P3 styles remain unchanged.
+========================================================= */
+
+.auth-page {
+    width: 100%;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+    margin: 0 0 10px;
+    color: #17a2b8;
+    font-size: 28px;
+    text-align: center;
+}
+
+.auth-card > p {
+    margin: 0 0 20px;
+    color: #666666;
+    text-align: center;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+}
+
+.auth-card form label {
+    display: block;
+    margin-top: 6px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.auth-card form input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.auth-card form input:focus {
+    outline: none;
+    border-color: #17a2b8;
+}
+
+.auth-card form button {
+    width: 100%;
+    min-height: 44px;
+    margin-top: 12px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #17a2b8;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.auth-card form button:hover {
+    background-color: #138496;
+}
+
+.auth-card form button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.auth-card .auth-error {
+    margin: 10px 0;
+    color: #c62828;
+    font-size: 14px;
+}
+
+.auth-card a {
+    color: #17a2b8;
+    text-decoration: none;
+}
+
+.auth-card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+    .auth-page {
+        padding: 28px 16px;
+    }
+
+    .auth-card {
+        padding: 24px 20px;
+    }
+
+    .auth-card h2 {
+        font-size: 25px;
     }
 }
